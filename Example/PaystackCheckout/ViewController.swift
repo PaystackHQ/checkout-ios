@@ -7,18 +7,27 @@
 //
 
 import UIKit
+import PaystackCheckout
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, CheckoutDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func onStartPaymentTap(_ sender: UIButton) {
+        let paymentParams = PaymentParams(amount: 30, email: "test@email.com", key: "PK_XXXXXX")
+        let checkoutVC = CheckoutViewController(params: paymentParams, delegate: self)
+        present(checkoutVC, animated: true)
     }
-
+    
+    func onError(error: Error) {
+        print("There was an error: \(error.localizedDescription)")
+    }
+    
+    func onSuccess(ref: String) {
+        print("Payment successfull \(ref)")
+    }
+    
 }
 

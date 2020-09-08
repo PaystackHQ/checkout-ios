@@ -1,0 +1,30 @@
+{
+  "name": "PaystackCheckout",
+  "version": "0.1.0",
+  "summary": "A drop in library to accept payment with Paystack on iOS",
+  "description": "A drop in library to accept payment with Paystack on iOS",
+  "homepage": "https://github.com/Jubril Olambiwonnu/PaystackCheckout",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Jubril Olambiwonnu": "jubril@paystack.com"
+  },
+  "source": {
+    "git": "https://github.com/Jubril Olambiwonnu/PaystackCheckout.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "swift_versions": "5.0",
+  "source_files": "PaystackCheckout/Classes/**/*",
+  "frameworks": "UIKit",
+  "dependencies": {
+    "Alamofire": [
+
+    ]
+  },
+  "swift_version": "5.0"
+}

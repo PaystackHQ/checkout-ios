@@ -1,0 +1,23 @@
+PODS:
+  - Alamofire (5.2.2)
+  - PaystackCheckout (0.1.0):
+    - Alamofire
+
+DEPENDENCIES:
+  - PaystackCheckout (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+
+EXTERNAL SOURCES:
+  PaystackCheckout:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
+  PaystackCheckout: 4b910122b2647b98ea8a3718d419f6a20bb34613
+
+PODFILE CHECKSUM: 25b8476dda26028626c779b0a5200e572c4d9a31
+
+COCOAPODS: 1.9.3

@@ -26,13 +26,24 @@
                                     <action selector="onStartPaymentTap:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="yOI-nL-ZD0"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MWV-d2-8Gf">
+                                <rect key="frame" x="166.5" y="277.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="MWV-d2-8Gf" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Bao-CY-Dgv"/>
                             <constraint firstItem="X6v-8J-IsJ" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="UzN-Ql-NBl"/>
                             <constraint firstItem="X6v-8J-IsJ" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="fLt-I9-6Fo"/>
+                            <constraint firstItem="X6v-8J-IsJ" firstAttribute="top" secondItem="MWV-d2-8Gf" secondAttribute="bottom" constant="20" id="i5j-WA-Yp5"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="statusLabel" destination="MWV-d2-8Gf" id="hQe-x0-eod"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

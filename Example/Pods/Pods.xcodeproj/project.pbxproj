@@ -36,17 +36,20 @@
 		8AA937910F87915DE700CAB6C868689E /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EBC286A9BAE2611EFC71F7C9FB60B8 /* Notifications.swift */; };
 		8CA9B04D266357BE4B061EC473E4C58B /* Pods-PaystackCheckout_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 90FEAF1FDF094052B7482052FC69A773 /* Pods-PaystackCheckout_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		911448B2EDA2FF880108F77642797A88 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7197951AB8559109A9F40B71A85C843E /* ResponseSerialization.swift */; };
+		911940962512ABF700F783BE /* TransactionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911940952512ABF700F783BE /* TransactionResponse.swift */; };
+		9119409A2512B46D00F783BE /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911940992512B46D00F783BE /* ApiClient.swift */; };
+		9119409C2512B71800F783BE /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9119409B2512B71800F783BE /* ErrorResponse.swift */; };
 		91A6BBFB25077EE70065B372 /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A6BBFA25077EE70065B372 /* CheckoutViewController.swift */; };
 		91A6BBFD25078F170065B372 /* CheckoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A6BBFC25078F170065B372 /* CheckoutViewModel.swift */; };
 		91B837CE0DCD8EDB300FCDFFA1279162 /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333DAB6EC98A071AAD9A29C41818F346 /* HTTPHeaders.swift */; };
 		91BE78DB2506EF85002EC2A3 /* PaymentParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BE78DA2506EF85002EC2A3 /* PaymentParams.swift */; };
+		91DEB3FF250FCD6500D6F51A /* PaymentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DEB3FE250FCD6500D6F51A /* PaymentResponse.swift */; };
 		9A5BA1EF03E2AF3677A1601B03AEAB7A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64619C8559B5865BB4EF3CE92FDD2181 /* UIKit.framework */; };
 		9B1D8A7798D8A6F518FC9AF9725431D0 /* URLConvertible+URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC350EEADBAF761D20138C94C4A0086 /* URLConvertible+URLRequestConvertible.swift */; };
 		9D7AF34962D7318BBDF10341AE25C7B7 /* PaystackCheckout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3343D19C9480462E2FE30C21B8FC6E /* PaystackCheckout-dummy.m */; };
 		9FED70D1E1FBFB80E974E999EF732258 /* RetryPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C44EFF4AE1CC95C361F6A007EDBD6E7 /* RetryPolicy.swift */; };
 		A738C2A39C0150BBA7EA5EC19B95F03E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A59533689A634251FF222CDCE1A2AE7 /* CFNetwork.framework */; };
 		ABA85887A41495358C83CE3F3030EDEA /* CachedResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4D233027C8491F55B2473FCDA12389 /* CachedResponseHandler.swift */; };
-		B07AF6BB174EA44336737F718C9889BF /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EB0F976D12407A857EADC4151D1968 /* ReplaceMe.swift */; };
 		C0D153909008F4CEF6A918217C0302C2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59FFCCA47F3C2FDB058F13F533B90341 /* Alamofire.framework */; };
 		C1C5B050B55C15103ABC81769551A283 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F2B77F50C8E86FDD27C5A573013C07 /* Response.swift */; };
 		C1F1DB6A9CBDE584D09BA1613AAD4F9D /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEF4837C47DFB74B73C8B82A591E94C /* Alamofire.swift */; };
@@ -103,7 +106,6 @@
 		0E0440F4381D065FED6264EFBCDB7960 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
 		0EC45C560942C5BCAB401419728808D3 /* EventMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventMonitor.swift; path = Source/EventMonitor.swift; sourceTree = "<group>"; };
 		20097F794E1A1791AB97EBE230264E61 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
-		29EB0F976D12407A857EADC4151D1968 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = PaystackCheckout/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		29EBC286A9BAE2611EFC71F7C9FB60B8 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
 		2B0F05A3DBDE8E8AD6A8511F035D63D3 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
 		333DAB6EC98A071AAD9A29C41818F346 /* HTTPHeaders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPHeaders.swift; path = Source/HTTPHeaders.swift; sourceTree = "<group>"; };
@@ -142,9 +144,13 @@
 		860E7CD2AC4AA9E284E1F0CE3CF923F8 /* Pods-PaystackCheckout_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PaystackCheckout_Example-frameworks.sh"; sourceTree = "<group>"; };
 		876F4F5D5DA538F51C4D4F27C9F64377 /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OperationQueue+Alamofire.swift"; path = "Source/OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		90FEAF1FDF094052B7482052FC69A773 /* Pods-PaystackCheckout_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PaystackCheckout_Tests-umbrella.h"; sourceTree = "<group>"; };
+		911940952512ABF700F783BE /* TransactionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionResponse.swift; sourceTree = "<group>"; };
+		911940992512B46D00F783BE /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApiClient.swift; path = PaystackCheckout/Classes/ApiClient.swift; sourceTree = "<group>"; };
+		9119409B2512B71800F783BE /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ErrorResponse.swift; path = PaystackCheckout/Classes/ErrorResponse.swift; sourceTree = "<group>"; };
 		91A6BBFA25077EE70065B372 /* CheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
 		91A6BBFC25078F170065B372 /* CheckoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewModel.swift; sourceTree = "<group>"; };
 		91BE78DA2506EF85002EC2A3 /* PaymentParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentParams.swift; sourceTree = "<group>"; };
+		91DEB3FE250FCD6500D6F51A /* PaymentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentResponse.swift; sourceTree = "<group>"; };
 		970C386BD824FE4AD000560950399556 /* URLSessionConfiguration+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLSessionConfiguration+Alamofire.swift"; path = "Source/URLSessionConfiguration+Alamofire.swift"; sourceTree = "<group>"; };
 		998E57E5CB536D68D4A97BC1B56E62B8 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
 		9C1741D7ACD43E5D0E9DBE557F396581 /* RequestInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestInterceptor.swift; path = Source/RequestInterceptor.swift; sourceTree = "<group>"; };
@@ -314,12 +320,15 @@
 		8D26F918B56972B85742EE67429A55EB /* PaystackCheckout */ = {
 			isa = PBXGroup;
 			children = (
-				29EB0F976D12407A857EADC4151D1968 /* ReplaceMe.swift */,
-				A2ED3F058A7B5B591D626A794428EEB7 /* Pod */,
-				56840CADF76769EF8458C50CF90E5B63 /* Support Files */,
+				911940992512B46D00F783BE /* ApiClient.swift */,
 				91BE78DA2506EF85002EC2A3 /* PaymentParams.swift */,
 				91A6BBFA25077EE70065B372 /* CheckoutViewController.swift */,
+				911940952512ABF700F783BE /* TransactionResponse.swift */,
+				9119409B2512B71800F783BE /* ErrorResponse.swift */,
+				91DEB3FE250FCD6500D6F51A /* PaymentResponse.swift */,
 				91A6BBFC25078F170065B372 /* CheckoutViewModel.swift */,
+				56840CADF76769EF8458C50CF90E5B63 /* Support Files */,
+				A2ED3F058A7B5B591D626A794428EEB7 /* Pod */,
 			);
 			name = PaystackCheckout;
 			path = ../..;
@@ -647,10 +656,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				91A6BBFD25078F170065B372 /* CheckoutViewModel.swift in Sources */,
+				911940962512ABF700F783BE /* TransactionResponse.swift in Sources */,
+				91DEB3FF250FCD6500D6F51A /* PaymentResponse.swift in Sources */,
+				9119409A2512B46D00F783BE /* ApiClient.swift in Sources */,
 				91BE78DB2506EF85002EC2A3 /* PaymentParams.swift in Sources */,
 				9D7AF34962D7318BBDF10341AE25C7B7 /* PaystackCheckout-dummy.m in Sources */,
-				B07AF6BB174EA44336737F718C9889BF /* ReplaceMe.swift in Sources */,
 				91A6BBFB25077EE70065B372 /* CheckoutViewController.swift in Sources */,
+				9119409C2512B71800F783BE /* ErrorResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

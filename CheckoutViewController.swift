@@ -19,6 +19,7 @@ public class CheckoutViewController: UIViewController {
         self.params = params
         self.delegate = delegate
         super.init(nibName: nil, bundle: nil)
+        self.presentationController?.delegate = self
     }
     
     required init?(coder: NSCoder) {
@@ -56,13 +57,18 @@ public class CheckoutViewController: UIViewController {
             guard let event  = bodyDict["event"] as? String else { return }
             switch event {
             case TransactionEvents.close:
+                delegate.onDimissal()
                 dismiss(animated: true)
             case TransactionEvents.success:
                 guard let response =  parseTransactionResponse(dict: bodyDict) else {
-                    delegate.onError(error: APIError.emptyResponseError)
+                    self.dismiss(animated: true)
+                    delegate.onError(error: ErrorResponse.genericError)
                     return
                 }
-                delegate.onSuccess(response: response)
+                delay(2){
+                    self.dismiss(animated: true)
+                    self.delegate.onSuccess(response: response)
+                }
             default:
                 break
             }
@@ -85,12 +91,18 @@ extension CheckoutViewController: WKScriptMessageHandler {
             handleResponse(response: message.body)
         }
     }
-    
+}
+
+extension CheckoutViewController: UIAdaptivePresentationControllerDelegate {
+    public func presentationControllerDidDismiss(_ presentationController: UIPresentationController) {
+        delegate.onDimissal()
+    }
 }
 
 public protocol CheckoutDelegate {
     func onError(error: Error)
     func onSuccess(response: TransactionResponse)
+    func onDimissal()
 }
 
 struct TransactionEvents {
@@ -99,4 +111,11 @@ struct TransactionEvents {
     static let loadedCheckout = "loadedCheckout"
     static let loadedTransaction = "loadedTransaction"
     static let redirecting = "redirecting"
+}
+
+func delay(_ delay: Double, closure: @escaping () -> ()) {
+    
+    DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
+        closure()
+    }
 }

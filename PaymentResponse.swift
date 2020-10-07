@@ -11,7 +11,7 @@ import Alamofire
 public struct PaymentResponse {
     var accessCode: String
     var url: String {
-        return "http://checkout-studio.paystack.com/\(accessCode)"
+        return "http://checkout.paystack.com/\(accessCode)"
     }
     
     enum CodingKeys: String, CodingKey {

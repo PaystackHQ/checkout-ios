@@ -28,7 +28,6 @@ public class APIClient {
         AF.request(url, parameters: cleanParams, encoding: URLEncoding.default).responseData { response in
             switch response.result {
             case .success(let json):
-                print(String(decoding: json, as: UTF8.self))
                 guard let paymentResponse = try? JSONDecoder().decode(PaymentResponse.self, from: json) else {
                     let error = try? JSONDecoder().decode(ErrorResponse.self, from: json)
                     completion(nil, error)

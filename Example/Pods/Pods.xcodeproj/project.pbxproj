@@ -39,10 +39,11 @@
 		911940962512ABF700F783BE /* TransactionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911940952512ABF700F783BE /* TransactionResponse.swift */; };
 		9119409A2512B46D00F783BE /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911940992512B46D00F783BE /* ApiClient.swift */; };
 		9119409C2512B71800F783BE /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9119409B2512B71800F783BE /* ErrorResponse.swift */; };
+		914EFA8C2524DC520045BD99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 914EFA8B2524DC520045BD99 /* Assets.xcassets */; };
+		9167B48A25196BB00070AA4F /* cancel.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9167B48925196BB00070AA4F /* cancel.pdf */; };
 		91A6BBFB25077EE70065B372 /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A6BBFA25077EE70065B372 /* CheckoutViewController.swift */; };
-		91A6BBFD25078F170065B372 /* CheckoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A6BBFC25078F170065B372 /* CheckoutViewModel.swift */; };
 		91B837CE0DCD8EDB300FCDFFA1279162 /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333DAB6EC98A071AAD9A29C41818F346 /* HTTPHeaders.swift */; };
-		91BE78DB2506EF85002EC2A3 /* PaymentParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BE78DA2506EF85002EC2A3 /* PaymentParams.swift */; };
+		91BE78DB2506EF85002EC2A3 /* TransactionParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BE78DA2506EF85002EC2A3 /* TransactionParams.swift */; };
 		91DEB3FF250FCD6500D6F51A /* PaymentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DEB3FE250FCD6500D6F51A /* PaymentResponse.swift */; };
 		9A5BA1EF03E2AF3677A1601B03AEAB7A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64619C8559B5865BB4EF3CE92FDD2181 /* UIKit.framework */; };
 		9B1D8A7798D8A6F518FC9AF9725431D0 /* URLConvertible+URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC350EEADBAF761D20138C94C4A0086 /* URLConvertible+URLRequestConvertible.swift */; };
@@ -147,9 +148,10 @@
 		911940952512ABF700F783BE /* TransactionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionResponse.swift; sourceTree = "<group>"; };
 		911940992512B46D00F783BE /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApiClient.swift; path = PaystackCheckout/Classes/ApiClient.swift; sourceTree = "<group>"; };
 		9119409B2512B71800F783BE /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ErrorResponse.swift; path = PaystackCheckout/Classes/ErrorResponse.swift; sourceTree = "<group>"; };
+		914EFA8B2524DC520045BD99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = PaystackCheckout/Assets/Assets.xcassets; sourceTree = "<group>"; };
+		9167B48925196BB00070AA4F /* cancel.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = cancel.pdf; sourceTree = "<group>"; };
 		91A6BBFA25077EE70065B372 /* CheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
-		91A6BBFC25078F170065B372 /* CheckoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewModel.swift; sourceTree = "<group>"; };
-		91BE78DA2506EF85002EC2A3 /* PaymentParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentParams.swift; sourceTree = "<group>"; };
+		91BE78DA2506EF85002EC2A3 /* TransactionParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionParams.swift; sourceTree = "<group>"; };
 		91DEB3FE250FCD6500D6F51A /* PaymentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentResponse.swift; sourceTree = "<group>"; };
 		970C386BD824FE4AD000560950399556 /* URLSessionConfiguration+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLSessionConfiguration+Alamofire.swift"; path = "Source/URLSessionConfiguration+Alamofire.swift"; sourceTree = "<group>"; };
 		998E57E5CB536D68D4A97BC1B56E62B8 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
@@ -321,12 +323,13 @@
 			isa = PBXGroup;
 			children = (
 				911940992512B46D00F783BE /* ApiClient.swift */,
-				91BE78DA2506EF85002EC2A3 /* PaymentParams.swift */,
+				91BE78DA2506EF85002EC2A3 /* TransactionParams.swift */,
 				91A6BBFA25077EE70065B372 /* CheckoutViewController.swift */,
 				911940952512ABF700F783BE /* TransactionResponse.swift */,
 				9119409B2512B71800F783BE /* ErrorResponse.swift */,
 				91DEB3FE250FCD6500D6F51A /* PaymentResponse.swift */,
-				91A6BBFC25078F170065B372 /* CheckoutViewModel.swift */,
+				9167B48925196BB00070AA4F /* cancel.pdf */,
+				914EFA8B2524DC520045BD99 /* Assets.xcassets */,
 				56840CADF76769EF8458C50CF90E5B63 /* Support Files */,
 				A2ED3F058A7B5B591D626A794428EEB7 /* Pod */,
 			);
@@ -580,6 +583,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				914EFA8C2524DC520045BD99 /* Assets.xcassets in Resources */,
+				9167B48A25196BB00070AA4F /* cancel.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -655,11 +660,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91A6BBFD25078F170065B372 /* CheckoutViewModel.swift in Sources */,
 				911940962512ABF700F783BE /* TransactionResponse.swift in Sources */,
 				91DEB3FF250FCD6500D6F51A /* PaymentResponse.swift in Sources */,
 				9119409A2512B46D00F783BE /* ApiClient.swift in Sources */,
-				91BE78DB2506EF85002EC2A3 /* PaymentParams.swift in Sources */,
+				91BE78DB2506EF85002EC2A3 /* TransactionParams.swift in Sources */,
 				9D7AF34962D7318BBDF10341AE25C7B7 /* PaystackCheckout-dummy.m in Sources */,
 				91A6BBFB25077EE70065B372 /* CheckoutViewController.swift in Sources */,
 				9119409C2512B71800F783BE /* ErrorResponse.swift in Sources */,

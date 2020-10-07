@@ -28,9 +28,9 @@ Pod::Spec.new do |s|
 
   s.source_files = 'PaystackCheckout/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'PaystackCheckout' => ['PaystackCheckout/Assets/*.png']
-  # }
+   s.resource_bundles = {
+     'PaystackCheckout' => ['PaystackCheckout/Assets/*.xcassets']
+   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'

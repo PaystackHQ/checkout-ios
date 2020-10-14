@@ -8,11 +8,17 @@
 import Foundation
 
 public struct TransactionParams {
+    /// Amount in lower denomination eg: kobo, peswa
     public var amount: Int
+    /// Customer's email
     public var email: String
-    public var key: String
+    /// Your business' public key found at https://dashboard.paystack.com/keys
+    public var publicKey: String
+    /// The customer's first name
     public var firstName: String?
+    /// The customer's last name
     public var lastName: String?
+    /// The customer's phone number
     public var phone: String?
     public var plan: String?
     public var invoiceLimit: Int?
@@ -25,7 +31,7 @@ public struct TransactionParams {
     public init(amount: Int, email: String, key: String, currency: Currency? = nil, firstName: String? = nil, lastName: String? = nil, phone: String? = nil, plan: String? = nil, invoiceLimit: Int? = nil, subAccount: String? = nil, transactionCharge: Int? = nil, bearer: String? = nil, channels: [Channel]? = nil) {
         self.amount = amount
         self.email = email
-        self.key = key
+        self.publicKey = key
         self.currency = currency
         self.firstName = firstName
         self.lastName = lastName

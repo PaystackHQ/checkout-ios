@@ -1,15 +1,12 @@
 # PaystackCheckout
 
-[![CI Status](https://img.shields.io/travis/Jubril Olambiwonnu/PaystackCheckout.svg?style=flat)](https://travis-ci.org/Jubril Olambiwonnu/PaystackCheckout)
-[![Version](https://img.shields.io/cocoapods/v/PaystackCheckout.svg?style=flat)](https://cocoapods.org/pods/PaystackCheckout)
-[![License](https://img.shields.io/cocoapods/l/PaystackCheckout.svg?style=flat)](https://cocoapods.org/pods/PaystackCheckout)
-[![Platform](https://img.shields.io/cocoapods/p/PaystackCheckout.svg?style=flat)](https://cocoapods.org/pods/PaystackCheckout)
-
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+
+Paystack Checkout requires Xcode 11.7 or later and is compatible with apps targeting iOS 11 or above.
 
 ## Installation
 
@@ -20,10 +17,33 @@ it, simply add the following line to your Podfile:
 pod 'PaystackCheckout'
 ```
 
-## Author
+## Usage
 
-Jubril Olambiwonnu, jubril@paystack.com
+To collect payments from a user, create an instance of `CheckoutViewController` setting its `TransactionParams` and `delegate`.
 
-## License
+```swift
+let params = TransactionParams(amount: 5000, email: "test@email.com", key: "pk_live_xxxx")
+let checkoutVC = CheckoutViewController(params: params, delegate: self)
+present(checkoutVC, animated: true)
 
-PaystackCheckout is available under the MIT license. See the LICENSE file for more info.
+```
+The `TransactionParams` class encapsulates all the parameters necessary to initialize a transaction. The following parameters are required `amount` `email` and `publicKey`. All others are optional. A full list of parameters and their function can be found here. 
+
+To receive events from the `CheckoutViewController` your presenting viewcontroller will need to conform to the `CheckoutProtocol`
+
+```swift
+class ViewController: UIViewController, CheckoutProtocol {
+
+  func onSuccess(response: TransactionResponse) {
+    print("Payment successfull \(response.reference)")
+  }
+  
+  func onError(error: Error?) {
+    print("There was an error: \(error!.localizedDescription)")
+  }
+    
+  func onDimissal() {
+    print("You dimissed the payment modal")
+  }
+}
+```

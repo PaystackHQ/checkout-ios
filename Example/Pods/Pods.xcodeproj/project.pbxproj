@@ -40,7 +40,6 @@
 		9119409A2512B46D00F783BE /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911940992512B46D00F783BE /* ApiClient.swift */; };
 		9119409C2512B71800F783BE /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9119409B2512B71800F783BE /* ErrorResponse.swift */; };
 		914EFA8C2524DC520045BD99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 914EFA8B2524DC520045BD99 /* Assets.xcassets */; };
-		9167B48A25196BB00070AA4F /* cancel.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9167B48925196BB00070AA4F /* cancel.pdf */; };
 		91A6BBFB25077EE70065B372 /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A6BBFA25077EE70065B372 /* CheckoutViewController.swift */; };
 		91B837CE0DCD8EDB300FCDFFA1279162 /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333DAB6EC98A071AAD9A29C41818F346 /* HTTPHeaders.swift */; };
 		91BE78DB2506EF85002EC2A3 /* TransactionParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BE78DA2506EF85002EC2A3 /* TransactionParams.swift */; };
@@ -145,14 +144,13 @@
 		860E7CD2AC4AA9E284E1F0CE3CF923F8 /* Pods-PaystackCheckout_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PaystackCheckout_Example-frameworks.sh"; sourceTree = "<group>"; };
 		876F4F5D5DA538F51C4D4F27C9F64377 /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OperationQueue+Alamofire.swift"; path = "Source/OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		90FEAF1FDF094052B7482052FC69A773 /* Pods-PaystackCheckout_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PaystackCheckout_Tests-umbrella.h"; sourceTree = "<group>"; };
-		911940952512ABF700F783BE /* TransactionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionResponse.swift; sourceTree = "<group>"; };
+		911940952512ABF700F783BE /* TransactionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TransactionResponse.swift; path = PaystackCheckout/Classes/TransactionResponse.swift; sourceTree = "<group>"; };
 		911940992512B46D00F783BE /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApiClient.swift; path = PaystackCheckout/Classes/ApiClient.swift; sourceTree = "<group>"; };
 		9119409B2512B71800F783BE /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ErrorResponse.swift; path = PaystackCheckout/Classes/ErrorResponse.swift; sourceTree = "<group>"; };
 		914EFA8B2524DC520045BD99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = PaystackCheckout/Assets/Assets.xcassets; sourceTree = "<group>"; };
-		9167B48925196BB00070AA4F /* cancel.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = cancel.pdf; sourceTree = "<group>"; };
-		91A6BBFA25077EE70065B372 /* CheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
-		91BE78DA2506EF85002EC2A3 /* TransactionParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionParams.swift; sourceTree = "<group>"; };
-		91DEB3FE250FCD6500D6F51A /* PaymentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentResponse.swift; sourceTree = "<group>"; };
+		91A6BBFA25077EE70065B372 /* CheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CheckoutViewController.swift; path = PaystackCheckout/Classes/CheckoutViewController.swift; sourceTree = "<group>"; };
+		91BE78DA2506EF85002EC2A3 /* TransactionParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TransactionParams.swift; path = PaystackCheckout/Classes/TransactionParams.swift; sourceTree = "<group>"; };
+		91DEB3FE250FCD6500D6F51A /* PaymentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PaymentResponse.swift; path = PaystackCheckout/Classes/PaymentResponse.swift; sourceTree = "<group>"; };
 		970C386BD824FE4AD000560950399556 /* URLSessionConfiguration+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLSessionConfiguration+Alamofire.swift"; path = "Source/URLSessionConfiguration+Alamofire.swift"; sourceTree = "<group>"; };
 		998E57E5CB536D68D4A97BC1B56E62B8 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
 		9C1741D7ACD43E5D0E9DBE557F396581 /* RequestInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestInterceptor.swift; path = Source/RequestInterceptor.swift; sourceTree = "<group>"; };
@@ -328,7 +326,6 @@
 				911940952512ABF700F783BE /* TransactionResponse.swift */,
 				9119409B2512B71800F783BE /* ErrorResponse.swift */,
 				91DEB3FE250FCD6500D6F51A /* PaymentResponse.swift */,
-				9167B48925196BB00070AA4F /* cancel.pdf */,
 				914EFA8B2524DC520045BD99 /* Assets.xcassets */,
 				56840CADF76769EF8458C50CF90E5B63 /* Support Files */,
 				A2ED3F058A7B5B591D626A794428EEB7 /* Pod */,
@@ -584,7 +581,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				914EFA8C2524DC520045BD99 /* Assets.xcassets in Resources */,
-				9167B48A25196BB00070AA4F /* cancel.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

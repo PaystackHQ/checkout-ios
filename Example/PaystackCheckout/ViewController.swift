@@ -9,7 +9,7 @@
 import UIKit
 import PaystackCheckout
 
-class ViewController: UIViewController, CheckoutDelegate {
+class ViewController: UIViewController, CheckoutProtocol {
     
     @IBOutlet var statusLabel: UILabel!
     override func viewDidLoad() {
@@ -18,25 +18,22 @@ class ViewController: UIViewController, CheckoutDelegate {
     }
     
     @IBAction func onStartPaymentTap(_ sender: UIButton) {
-        let paymentParams = PaymentParams(amount: 500, email: "email", key: "pk_xxx")
+        let paymentParams = TransactionParams(amount: 5000, email: "test@email.com", key: "pk_live_xxx", currency: .ngn, channels: [.qr, .ussd])
         let checkoutVC = CheckoutViewController(params: paymentParams, delegate: self)
         statusLabel.text = ""
         present(checkoutVC, animated: true)
     }
     
-    func onError(error: Error) {
-        statusLabel.text = "There was an error: \(error.localizedDescription)"
-        print("There was an error: \(error.localizedDescription)")
+    func onError(error: Error?) {
+        statusLabel.text = "There was an error: \(error!.localizedDescription)"
     }
     
     func onSuccess(response: TransactionResponse) {
         statusLabel.text = "Payment successfull \(response.reference)"
-        print("Payment successfull \(response.reference)")
     }
     
     func onDimissal() {
         statusLabel.text = "You dimissed the payment modal"
-        print("payment modal dismissed")
     }
 }
 

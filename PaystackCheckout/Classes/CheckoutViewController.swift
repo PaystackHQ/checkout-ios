@@ -14,9 +14,9 @@ public class CheckoutViewController: UIViewController {
     var headerView = UIView()
     var progressView = UIProgressView()
     public var params: TransactionParams
-    public var delegate: CheckoutDelegate
+    public var delegate: CheckoutProtocol
     
-    public init(params: TransactionParams, delegate: CheckoutDelegate) {
+    public init(params: TransactionParams, delegate: CheckoutProtocol) {
         self.params = params
         self.delegate = delegate
         super.init(nibName: nil, bundle: nil)
@@ -154,7 +154,7 @@ extension CheckoutViewController: UIAdaptivePresentationControllerDelegate {
     }
 }
 
-public protocol CheckoutDelegate {
+public protocol CheckoutProtocol {
     func onError(error: Error?)
     func onSuccess(response: TransactionResponse)
     func onDimissal()

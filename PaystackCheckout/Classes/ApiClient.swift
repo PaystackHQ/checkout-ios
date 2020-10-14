@@ -11,7 +11,7 @@ public class APIClient {
         let params: [String : Any?] = [
             "amount" : params.amount,
             "email" : params.email,
-            "key" : params.key,
+            "key" : params.publicKey,
             "firstname" : params.firstName,
             "lastname" : params.lastName,
             "phone" : params.phone,

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="PaystackCheckout_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X6v-8J-IsJ">
+                                <rect key="frame" x="157" y="318.5" width="61" height="30"/>
+                                <state key="normal" title="Buy Item"/>
+                                <connections>
+                                    <action selector="onStartPaymentTap:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="yOI-nL-ZD0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MWV-d2-8Gf">
+                                <rect key="frame" x="50" y="278" width="275" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95687562230000001" green="0.95683962109999998" blue="0.95686405900000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="MWV-d2-8Gf" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="50" id="2SI-9b-JeQ"/>
+                            <constraint firstItem="MWV-d2-8Gf" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Bao-CY-Dgv"/>
+                            <constraint firstItem="X6v-8J-IsJ" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="UzN-Ql-NBl"/>
+                            <constraint firstAttribute="trailing" secondItem="MWV-d2-8Gf" secondAttribute="trailing" constant="50" id="XWC-cm-QQD"/>
+                            <constraint firstItem="X6v-8J-IsJ" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="fLt-I9-6Fo"/>
+                            <constraint firstItem="X6v-8J-IsJ" firstAttribute="top" secondItem="MWV-d2-8Gf" secondAttribute="bottom" constant="20" id="i5j-WA-Yp5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="statusLabel" destination="MWV-d2-8Gf" id="hQe-x0-eod"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="133"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'PaystackCheckout_Example' do
+  pod 'PaystackCheckout', :path => '../'
+
+  target 'PaystackCheckout_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

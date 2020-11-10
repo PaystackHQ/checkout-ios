@@ -1,9 +1,5 @@
 # PaystackCheckout
 
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
 ## Requirements
 
 Paystack Checkout requires Xcode 11.7 or later and is compatible with apps targeting iOS 11 or above.
@@ -16,6 +12,7 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'PaystackCheckout'
 ```
+Then run `pod install` from your projects directory on terminal.
 
 ## Usage
 

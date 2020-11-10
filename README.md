@@ -12,7 +12,7 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'PaystackCheckout'
 ```
-Then run `pod install` from your projects directory on terminal.
+Then run `pod install` from your project's directory on terminal.
 
 ## Usage
 
@@ -24,7 +24,7 @@ let checkoutVC = CheckoutViewController(params: params, delegate: self)
 present(checkoutVC, animated: true)
 
 ```
-The `TransactionParams` class encapsulates all the parameters necessary to initialize a transaction. The following parameters are required `amount` `email` and `publicKey`. All others are optional. A full list of parameters and their function can be found here. 
+The `TransactionParams` class encapsulates all the parameters necessary to initialize a transaction. The following parameters are required `amount` `email` and `publicKey`. All others are optional. A full list of parameters and their function can be found [here](https://paystack.com/docs/api/#transaction-initialize). 
 
 To receive events from the `CheckoutViewController` your presenting viewcontroller will need to conform to the `CheckoutProtocol`
 

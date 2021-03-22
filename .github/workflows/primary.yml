@@ -1,17 +1,14 @@
 name: Primary
-true:
-  jobs:
-    SwiftLint:
-      runs-on: ubuntu-latest
-      steps:
-        -
-          uses: actions/checkout@v1
-        -
-          name: "GitHub Action for SwiftLint"
-          uses: norio-nomura/action-swiftlint@3.2.1
-  pull_request:
-    branches:
-      - master
-  push:
-    branches:
-      - master
+on:
+   push:
+      branches: [ master ]
+   pull_request:
+      branches: [ master ]
+
+jobs:
+  SwiftLint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: GitHub Action for SwiftLint
+      - uses: norio-nomura/action-swiftlint@3.2.1

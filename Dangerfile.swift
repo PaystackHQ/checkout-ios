@@ -2,7 +2,7 @@
 import Danger
 
 fileprivate extension Danger.File {
-    var isInTests: Bool { hasPrefix("PaystackTests/") }
+    var isInTests: Bool { hasPrefix("CheckoutSDKTests/") }
     
     var isSourceFile: Bool {
         hasSuffix(".swift") || hasSuffix(".h") || hasSuffix(".m")

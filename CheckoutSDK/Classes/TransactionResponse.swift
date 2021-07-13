@@ -7,6 +7,6 @@
 
 import Foundation
 public struct TransactionResponse {
-    public var id: Int
+    public var id: String
     public var reference: String
 }

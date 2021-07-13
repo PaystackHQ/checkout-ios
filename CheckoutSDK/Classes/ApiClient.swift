@@ -22,7 +22,7 @@ public class APIClient {
             "ref" : params.reference,
             "split_code" : params.splitCode,
             "quantity" : params.quantity,
-            "metadata" : params.metadata,
+            "metadata" : params.metaData,
             "label" : params.label,
             "bearer" : params.bearer,
             "currency" : params.currency?.rawValue,

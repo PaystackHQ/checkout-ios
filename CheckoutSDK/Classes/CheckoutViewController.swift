@@ -133,7 +133,7 @@ public class CheckoutViewController: UIViewController {
     
     private func parseTransactionResponse(dict: [String : Any]) -> TransactionResponse?  {
         if let data = dict["data"] as? [String : Any] {
-            guard let id = data["trans"] as? String, let reference = data["reference"] as? String else { return nil}
+            guard let id = data["trans"] as? Int, let reference = data["reference"] as? String else { return nil}
             return TransactionResponse(id: id, reference: reference)
         }
         return nil

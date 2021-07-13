@@ -8,7 +8,7 @@ public class APIClient {
     let url = "https://api.paystack.co/checkout/request_inline"
     
     public func requestInline(params: TransactionParams, completion: @escaping (PaymentResponse?, Error?) -> Void) {
-        let params: [String : Any?] = [
+         let params: [String : Any?] = [
             "amount" : params.amount,
             "email" : params.email,
             "key" : params.publicKey,
@@ -19,6 +19,11 @@ public class APIClient {
             "invoice_limit" : params.invoiceLimit,
             "subaccount" : params.subAccount,
             "transaction_charge" : params.transactionCharge,
+            "ref" : params.reference,
+            "split_code" : params.splitCode,
+            "quantity" : params.quantity,
+            "metadata" : params.metadata,
+            "label" : params.label,
             "bearer" : params.bearer,
             "currency" : params.currency?.rawValue,
             "channels" : params.channels?.map{$0.rawValue}

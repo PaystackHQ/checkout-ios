@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PaystackCheckout'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A drop in library to accept payment with Paystack on iOS'
   s.description      = 'A drop in library to accept payment with Paystack on iOS. This is the easiest way to start collecting payments on your mobile apps.'
   s.homepage         = 'https://github.com/PaystackHQ/checkout-ios'

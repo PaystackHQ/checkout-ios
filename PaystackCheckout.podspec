@@ -19,10 +19,10 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '11.0'
   s.swift_versions = '5.0'
 
-  s.source_files = 'PaystackCheckout/Classes/**/*'
+  s.source_files = 'CheckoutSDK/Classes/**/*'
   
    s.resource_bundles = {
-     'PaystackCheckout' => ['PaystackCheckout/Assets/*.xcassets']
+     'PaystackCheckout' => ['CheckoutSDK/Assets/*.xcassets']
    }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
